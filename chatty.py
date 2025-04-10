@@ -1,3 +1,6 @@
+import os
+os.environ["STREAMLIT_DISABLE_WATCHDOG_WARNINGS"] = "true"
+
 import pandas as pd
 import faiss
 import numpy as np
@@ -5,7 +8,8 @@ import google.generativeai as genai
 import streamlit as st
 from sentence_transformers import SentenceTransformer
 import pickle
-import os
+
+
 
 # Streamlit UI
 st.set_page_config(page_title="RAG Movie Recommender", layout="wide")
