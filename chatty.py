@@ -1,5 +1,8 @@
 import os
 os.environ["STREAMLIT_DISABLE_WATCHDOG_WARNINGS"] = "true"
+os.environ["TORCH_USE_RTLD_GLOBAL"] = "1"
+import torch
+
 
 import pandas as pd
 import faiss
