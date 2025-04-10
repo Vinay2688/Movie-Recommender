@@ -1,6 +1,7 @@
 import os
-os.environ["STREAMLIT_DISABLE_WATCHDOG_WARNINGS"] = "true"
 os.environ["TORCH_USE_RTLD_GLOBAL"] = "1"
+os.environ["STREAMLIT_DISABLE_WATCHDOG_WARNINGS"] = "true"
+
 import torch
 
 
